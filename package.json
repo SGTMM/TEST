@@ -1,0 +1,19 @@
+{
+  "name": "github-test",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.js",
+  "scripts": {
+    "start": "parcel ./*.html",
+    "build": "parcel build index.html",
+    "predeploy": "rm -rf dist/ && npm build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/SGTMM/TEST",
+  "dependencies": {
+    "gh-pages": "^6.0.0",
+    "parcel": "^2.9.3"
+  }
+}
